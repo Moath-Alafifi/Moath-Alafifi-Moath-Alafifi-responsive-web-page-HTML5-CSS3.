@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  font-family: "Cairo", "Noto Sans Mono", sans-serif;
+  letter-spacing: 0.05rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  color: #4c5057;
+  margin-bottom: 10px;
+}
+p {
+  color: #94969a;
+  font-size: 0.8rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: 90vh;
+  background: url("../images/Vestrahorn-mountain.jpg");
+  background-size: cover;
+  position: relative;
+}
+.menu {
+  float: right;
+  margin: 20px 20px 0px 0px;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li:first-of-type {
+  list-style-image: url("../images/icons/horizontal-line-svgrepo-com.svg");
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+.title {
+  width: 80%;
+  height: 30vh;
+  color: #ffffff;
+  position: absolute;
+  top: 60vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+.title p {
+  color: #ffffff;
+  opacity: 0.7;
+  width: 350px;
+}
+.title P img {
+  margin-right: 10px;
+  width: unset;
+}
+.title h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: unset;
+}
+/* nature section style */
+.nature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+.nature .nature-info {
+  width: 96%;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 10px 0px #eaeaea, -1px -1px 10px 0px #a7a4a4;
+}
+.nature .nature-info h1 img {
+  display: block;
+  margin-top: 10px;
+  width: unset;
+}
+.nature .nature-info .img-description {
+  margin: 0px 20px 0px 20px;
+}
+.nature .nature-info .img-description button {
+  width: 150px;
+  height: 40px;
+  margin: 20px 0px 20px 0px;
+  border: #eaeaea solid 1.5px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #4c5057;
+  font-weight: 700;
+}
+.nature .nature-img {
+  width: 96%;
+}
+.nature .nature-img img {
+  box-shadow: 1px 1px 10px 0px #eaeaea, -1px -1px 10px 0px #a7a4a4;
+}
+/*planets section style  */
+.planets {
+  display: grid;
+  gap: 10px;
+}
+.planets h1 img {
+  display: block;
+  width: unset;
+}
+.planets > p,
+.planets > h1 {
+  margin: 0px 20px 20px 20px;
+}
+/* epic spots section style */
+.epic-spots {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+}
+.epic-spots h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px 20px 0px;
+}
+.epic-spots h1 img {
+  width: unset;
+}
+.img-gallery {
+  display: unset;
+  width: 96%;
+}
+.epic-spots .img-gallery .img-container {
+  position: relative;
+}
+.epic-spots .img-container .img-info {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: 140px;
+  right: 0px;
+  left: 40px;
+  bottom: 0px;
+  margin: auto;
+}
+.epic-spots .img-container .img-info h5 {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.epic-spots .img-container .img-info h3 {
+  color: #ffffff;
+}
+/* footer style */
+footer {
+  background-image: url("../images/dark-mountain-02.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+footer h1 {
+  color: #ffffff;
+  opacity: 0.8;
+}
+footer h1 p {
+  font-size: 0.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+footer form input {
+  width: 40vw;
+
+  background-color: unset;
+  border: none;
+  margin: 10px 0px 10px 0px;
+  color: #2c2f32;
+  border-bottom: #2c2f32 solid 1.5px;
+}
+footer form [type="submit"] {
+  width: 25vw;
+  height: 8vh;
+  margin: 20px 0px 20px 0px;
+  border: #4c5057 solid 1px;
+  border-radius: 20px;
+  background-color: #2d3032;
+  align-self: center;
+  opacity: 0.9;
+  color: #ffffff;
+  font-weight: 600;
+}
+footer form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: #2d3032;
+  border: #7a7a7a solid 1px;
+}
+footer .terms {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 481px) {
+  /* nature section style for tablet */
+  .nature {
+    width: 98%;
+    height: 450px;
+    display: block;
+    margin: 20px 1% 40px 1%;
+  }
+  .nature .nature-info {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+  }
+  .nature .nature-img {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  .nature .nature-img img {
+    height: 100%;
+  }
+  /* planet section style for tablet */
+  .planets {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px 40px 0px;
+  }
+  .planets img {
+    grid-row: 1/ 3 span;
+  }
+  .planets > h1,
+  .planets > p {
+    margin: unset;
+  }
+  .planets p:last-of-type {
+    grid-column: 2;
+  }
+  /* stay section style for tablet */
+  .stay {
+    height: 520px;
+  }
+  /* epic spots section style for tablet */
+  .img-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .epic-spots .img-gallery .img-container {
+    width: 49.5%;
+    flex-shrink: 2;
+  }
+  .epic-spots .img-gallery .img-container img {
+    min-height: 250px;
+  }
+  .epic-spots .img-gallery .img-container:first-of-type {
+    flex-grow: 2;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .menu ul li:hover {
+    list-style-image: url("../images/icons/horizontal-line-svgrepo-com.svg");
+  }
+  .nature .nature-info .img-description button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #a7a4a4;
+    border: #7a7a7a solid 1px;
+  }
+  /* nature section style for PC */
+  .nature {
+    min-height: 400px;
+  }
+  .nature .nature-info {
+    display: inline-flex;
+    position: relative;
+    top: -10vh;
+    left: 40vw;
+    z-index: 1;
+    background-color: #ffffff;
+    max-height: 360px;
+  }
+  .nature .nature-info img {
+    width: 50%;
+    max-height: 200px;
+  }
+  .nature .nature-info .img-description {
+    margin-top: 10px;
+  }
+  .nature .nature-img {
+    position: relative;
+    top: 20vh;
+    left: -33vw;
+    z-index: 2;
+    max-height: 350px;
+  }
+  /* planet section style for PC */
+  .planets {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    align-items: stretch;
+    gap: 20px;
+    width: 90%;
+    margin-inline-start: 5%;
+    margin: 100px 0px 100px 0px;
+  }
+  .planets img {
+    grid-row: 1/ 3 span;
+    max-height: 300px;
+  }
+  .planets > p {
+    grid-column: 2;
+    grid-row: 2/3 span;
+  }
+  .planets p:last-of-type {
+    margin: unset;
+    grid-column: 3;
+  }
+  /* stay section style for PC */
+  .stay .stay-info {
+    flex-direction: row-reverse;
+    top: -10vh;
+    left: 10vw;
+  }
+  .stay .stay-img {
+    top: 20vh;
+    left: -12vw;
+  }
+  /* epic spots section style for PC */
+  .epic-spots {
+    margin: 20px 0px 100px 0px;
+  }
+  .img-gallery {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
+  .epic-spots .img-gallery .img-container:first-of-type {
+    grid-row: 1/ 2 span;
+    grid-column: 1/2 span;
+  }
+  .epic-spots .img-gallery .img-container {
+    width: 100%;
+    min-height: 100%;
+  }
+  .epic-spots .img-gallery .img-container img {
+    min-height: 100%;
+  }
+  .epic-spots .img-container .img-info {
+    top: 140px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Noto+Sans+Mono:wght@300;400&display=swap");
